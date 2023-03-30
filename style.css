@@ -1,0 +1,49 @@
+html {
+  font-size: 20px;
+  background: aliceblue;
+}
+html body {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5rem auto;
+  background: linear-gradient(53deg, rgb(68, 21, 187), rgb(163, 165, 248));
+  width: 650px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+html body input {
+  width: 200px;
+  height: auto;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+html body input:active {
+  box-shadow: inset 0 0 2px 5px rgba(122, 103, 220, 0.76);
+}
+html body input::-webkit-outer-spin-button, html body input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html body button {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 150px;
+}
+html body button:active {
+  box-shadow: inset 2px 2px 10px 5px #b776fd, inset -2px -2px 10px 5px #612dfc;
+  color: white;
+}
+html body .result {
+  width: 350px;
+}
+html body .result:disabled {
+  cursor: default;
+  background-color: white;
+  color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */
