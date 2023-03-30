@@ -1,4 +1,4 @@
-const fInput = document.querySelector('.first-number');
+fInput = document.querySelector('.first-number');
 const sInput = document.querySelector('.second-number');
 const thInput = document.querySelector('.third-number');
 const btn = document.querySelector('button');
@@ -16,4 +16,12 @@ btn.onclick = function() {
     let sum = a + b + c;
     res.setAttribute('value', sum);
 };
-
+fInput.oninput = function(){
+    fInput.value = fInput.value.replace (/[^\.\d]/g, '');
+}
+sInput.oninput = function(){
+    sInput.value = sInput.value.replace (/[^\.\d]/g, '');
+}
+thInput.oninput = function(){
+    thInput.value = thInput.value.replace (/[^\.\d]/g, '');
+}
